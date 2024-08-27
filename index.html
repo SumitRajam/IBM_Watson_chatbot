@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .jumbotron {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 150px 0;
+            margin-bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Adding a background color with transparency */
+            position: relative;
+            z-index: 1;
+        }
+
+        .jumbotron::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .jumbotron h1,
+        .jumbotron p {
+            color: #ffffff;
+        }
+
+        .section {
+            padding: 60px 0;
+            background-color: #fff;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .section-alternate {
+            background-color: #e9ecef;
+        }
+
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Career Guidance Hub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#careers">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron" id="home">
+        <div class="container">
+            <h1>Welcome to Career Guidance Hub</h1>
+            <p>Your destination for exploring careers in computer science</p>
+            <p>Start your journey towards a successful career today!</p>
+        </div>
+    </div>
+
+    <div class="section" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Personalized Career Assessments</h3>
+                    <p>Get personalized assessments to match your skills and interests with potential career paths in
+                        computer science.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Expert Career Advice</h3>
+                    <p>Receive expert advice from professionals in the field of computer science to guide you in making
+                        informed career decisions.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Job Market Insights</h3>
+                    <p>Stay updated with the latest job trends, salary insights, and demand for various roles in the
+                        computer science industry.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Interview Preparation</h3>
+                    <p>Prepare for job interviews with tips, mock interviews, and resources tailored to computer science
+                        career paths.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-alternate" id="careers">
+        <div class="container">
+            <h2>Explore Careers</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Software Development</h3>
+                    <p>Discover the world of software development, from coding to software architecture.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Data Science</h3>
+                    <p>Explore the field of data science, analyzing and interpreting complex data.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Cybersecurity</h3>
+                    <p>Learn about cybersecurity, protecting systems and networks from digital attacks.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Network Engineering</h3>
+                    <p>Explore network engineering, designing and managing computer networks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Email</h4>
+                    <p>contact@careerguidancehub.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Phone</h4>
+                    <p>+91 1234567890</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Address</h4>
+                    <p>abc town, Maharashtra, India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Career Guidance Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+        window.watsonAssistantChatOptions = {
+            integrationID: "6b4f1126-1062-49cc-9dd4-f2b558614a35", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "f351cb2c-ca9d-4bef-9bc7-a9ca61485a99", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+
+</html>
